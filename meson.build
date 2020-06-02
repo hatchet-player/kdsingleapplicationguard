@@ -1,4 +1,4 @@
-# kdasingle project build file
+# kdsingle project build file
 #============================================================================
 
 
@@ -11,7 +11,7 @@
 # init project
 #-------------------------------------------------
 project(
-    'kdasingleapplicationguard',
+    'kdsingleapplicationguard',
     ['c', 'cpp'],
     default_options : [
         'cpp_std=c++11',
@@ -74,7 +74,7 @@ config_h.set_quoted(
     'PACKAGE_URL', package_url,
     description : 'Define to the home page for this package.')
 
-package_bug_url = 'https://github.com/p01arst0rm/kdasingleapplicationguard/issues'
+package_bug_url = 'https://github.com/p01arst0rm/kdsingleapplicationguard/issues'
 config_h.set_quoted(
     'PACKAGE_BUGREPORT', package_bug_url,
     description : 'Define to the address where bug reports for this' +
@@ -189,9 +189,9 @@ install_headers(
     install_dir : join_paths(includedir, 'portfwd'))
 
 
-# build kdasingleapplicationguard
+# build kdsingleapplicationguard
 #-------------------------------------------------
-kdasingle_inc = [include_directories('.')]
+kdsingle_inc = [include_directories('.')]
 
 
 project_dirs = [

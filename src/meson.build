@@ -3,7 +3,7 @@
 
 
 single_app_guard_dir = meson.current_source_dir()
-kdasingle_inc += include_directories('.')
+kdsingle_inc += include_directories('.')
 
 
 single_app_guard_src = files(
@@ -48,7 +48,7 @@ single_app_guard_moc = []
 single_app_guard_moc += qt5.preprocess(
     moc_sources : single_app_guard_moc_src,
     moc_headers : single_app_guard_moc_h,
-    include_directories : kdasingle_inc)
+    include_directories : kdsingle_inc)
 
 
 single_app_guard_lib = library(
@@ -56,7 +56,7 @@ single_app_guard_lib = library(
     install : true,
     install_mode : 'rwxr-xr-x',
     install_dir : libdir,
-    include_directories : kdasingle_inc,
+    include_directories : kdsingle_inc,
     sources : [
         single_app_guard_moc,
         single_app_guard_src],
@@ -66,5 +66,5 @@ single_app_guard_lib = library(
 
 single_app_guard_dep = declare_dependency(
     link_with : single_app_guard_lib,
-    include_directories : kdasingle_inc
+    include_directories : kdsingle_inc
 )

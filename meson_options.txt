@@ -1,4 +1,4 @@
-# kdasingleapplicationguard build options
+# kdsingleapplicationguard build options
 #============================================================================
 
 # compiler args
