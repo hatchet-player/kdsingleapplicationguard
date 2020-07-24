@@ -19,6 +19,7 @@ option(
     'cxxflags',
     type : 'array',
     value : [
+        '-std=c++14',
         '-Wdeprecated', 
         '-Wno-non-virtual-dtor',
         '-Wno-unused-parameter'],
