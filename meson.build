@@ -14,7 +14,7 @@ project(
     'kdsingleapplicationguard',
     ['c', 'cpp'],
     default_options : [
-        'cpp_std=c++11',
+        'cpp_std=c++14',
         'warning_level=3',
         'optimization=3',
         'debug=true'

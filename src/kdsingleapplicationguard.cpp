@@ -25,6 +25,7 @@
 #endif
 
 #ifdef Q_OS_WIN
+#define NOMINMAX
 #include <windows.h>
 #ifndef _SSIZE_T_DEFINED
 typedef signed int ssize_t;
